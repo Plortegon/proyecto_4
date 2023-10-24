@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.reloj1{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/reloj.png");
+    background-size: cover;
+    border: 1rem solid rgb(143, 34, 160);
+    border-radius: 50vh;
+    box-shadow: 0px 0px 50px 0px rgb(166, 35, 202);
+}
+
+.reloj1::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgb(181, 25, 184);
+    border-radius: 50vh;
+    z-index: 10000;
+}
+
+.hora{
+    width: 150px;
+    height: 150px;
+}
+
+.minuto{
+    width: 190px;
+    height: 190px;
+}
+
+.segundo{
+    width: 250px;
+    height: 250px;
+}
+
+.hora::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 70px;
+    background: rgb(169, 27, 230);
+    z-index: 10;
+    border-radius: 50vh;
+}
+
+.minuto::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background: rgb(226, 27, 153);
+    z-index: 11;
+    border-radius: 50vh;
+}
+
+.segundo{
+    content: '';
+    position: absolute;
+    width: 1.8px;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    z-index: 12;
+    border-radius: 50vh;
+}
+
+.hora, .minuto,.segundo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50vh;
+   
+
+
+}
+
+body{
+    margin: 0;
+    min-height: 80vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(135, 195, 223);
+}
+
+.reloj{
+    border: 0.2rem solid rgb(178, 34, 197);
+    top:32% ;
+    left: 11%;
+    display: flex;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 700px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10vh;
+    font-family: monospace;
+    font-size: 1rem;    
+    color: rgb(0, 0, 0);
+}
+
+.p-1{
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.p-2{
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+
+}
